@@ -1,6 +1,9 @@
 (function() {
     // Obtener la URL del chat dinámicamente desde la API de Next.js
-    fetch('http://localhost:3000/api/get-chat-url')  // Cambia a la URL correcta si estás en producción
+    // local
+    // fetch('http://localhost:3000/api/get-chat-url')  // Cambia a la URL correcta si estás en producción
+    // producción
+    fetch('https://ai-maat-production.up.railway.app/api/get-chat-url')  // Cambia a la URL correcta si estás en producción
         .then(response => response.json())
         .then(data => {
             var isOpen = false;
